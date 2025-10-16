@@ -25,7 +25,7 @@ export default function PerformanceMetrics() {
   }, [])
 
   return (
-    <Card className="border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
+    <Card className="border-slate-200 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
       <CardHeader>
         <CardTitle className="text-lg">Combined Model Performance</CardTitle>
         <CardDescription>Real-time metrics</CardDescription>

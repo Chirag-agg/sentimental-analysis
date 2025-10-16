@@ -15,14 +15,14 @@ export default function BulkProcessingCard() {
   ]
 
   return (
-    <Card className="border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
+    <Card className="border-slate-200 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
       <CardHeader>
         <CardTitle className="text-xl">Bulk Processing & Model Enhancement</CardTitle>
         <CardDescription>Batch analysis and model training</CardDescription>
       </CardHeader>
       <CardContent>
         {/* Tabs */}
-        <div className="flex gap-2 mb-6 border-b border-border">
+        <div className="flex gap-2 mb-6 border-b border-slate-200">
           <button
             onClick={() => setActiveTab("batch")}
             className={`px-4 py-2 font-medium text-sm transition-all duration-300 border-b-2 ${
@@ -48,7 +48,7 @@ export default function BulkProcessingCard() {
         {/* Batch Tab */}
         {activeTab === "batch" && (
           <div className="space-y-4 fade-in">
-            <div className="border-2 border-dashed border-border rounded-lg p-8 text-center hover:border-primary/50 transition-colors cursor-pointer group">
+            <div className="border-2 border-dashed border-slate-200 rounded-lg p-8 text-center hover:border-primary/50 transition-colors cursor-pointer group">
               <div className="text-4xl mb-2 group-hover:scale-110 transition-transform">📁</div>
               <p className="text-foreground font-medium">Drag and drop CSV file here</p>
               <p className="text-sm text-muted-foreground">or click to browse</p>
@@ -58,7 +58,7 @@ export default function BulkProcessingCard() {
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-border">
+                  <tr className="border-b border-slate-200">
                     <th className="text-left py-3 px-4 text-muted-foreground font-medium">Text</th>
                     <th className="text-left py-3 px-4 text-muted-foreground font-medium">Sentiment</th>
                     <th className="text-left py-3 px-4 text-muted-foreground font-medium">Sarcasm</th>
@@ -67,7 +67,7 @@ export default function BulkProcessingCard() {
                 </thead>
                 <tbody>
                   {mockBatchResults.map((row) => (
-                    <tr key={row.id} className="border-b border-border hover:bg-primary/5 transition-colors">
+                    <tr key={row.id} className="border-b border-slate-200 hover:bg-primary/5 transition-colors">
                       <td className="py-3 px-4 text-foreground">{row.text}</td>
                       <td className="py-3 px-4">
                         <span
@@ -119,7 +119,7 @@ export default function BulkProcessingCard() {
               Upload a labeled dataset (.csv) with text, sentiment, and sarcasm columns.
             </p>
 
-            <div className="border-2 border-dashed border-border rounded-lg p-8 text-center hover:border-primary/50 transition-colors cursor-pointer group">
+            <div className="border-2 border-dashed border-slate-200 rounded-lg p-8 text-center hover:border-primary/50 transition-colors cursor-pointer group">
               <div className="text-4xl mb-2 group-hover:scale-110 transition-transform">📊</div>
               <p className="text-foreground font-medium">Upload training dataset</p>
               <p className="text-sm text-muted-foreground">CSV format with text, sentiment, sarcasm columns</p>

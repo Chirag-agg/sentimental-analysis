@@ -12,7 +12,7 @@ export default function NewHeader() {
   }
 
   return (
-    <header className="sticky top-0 z-10 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-10 border-b border-slate-200/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2">

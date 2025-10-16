@@ -12,48 +12,50 @@ export default function Header() {
   }
 
   return (
-    <header className="border-b border-border bg-background/80 backdrop-blur-sm sticky top-0 z-10">
+    <header className="border-b border-slate-200 bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
       <div className="flex h-16 items-center px-6 max-w-7xl mx-auto">
         <div className="flex items-center gap-3 font-medium">
-          <img src="/placeholder-logo.svg" alt="Logo" className="h-9 w-9 animate-pulse-slow" />
-          <span className="text-xl text-foreground">Nuance AI</span>
-          <span className="text-xs bg-primary/15 text-primary px-2 py-0.5 rounded-md ml-1 animate-glow">
+          <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-600 to-emerald-600 flex items-center justify-center">
+            <span className="text-white font-bold text-lg">N</span>
+          </div>
+          <span className="text-xl font-semibold bg-gradient-to-r from-blue-600 to-emerald-600 bg-clip-text text-transparent">
+            Nuance AI
+          </span>
+          <span className="text-xs bg-blue-100 text-blue-700 px-2.5 py-1 rounded-full font-medium">
             Sentiment + Sarcasm
           </span>
         </div>
-        <div className="ml-auto flex items-center gap-5">
-          <Button 
-            variant="outline" 
+        <div className="ml-auto flex items-center gap-4">
+          <Button
+            variant="outline"
             size="sm"
-            className="border-primary/50 text-primary hover:bg-primary/10 transition-all duration-300"
+            className="border-slate-300 hover:bg-slate-50 transition-all duration-300"
             onClick={toggleTheme}
           >
             {theme === "dark" ? <Sun className="h-4 w-4 mr-2" /> : <Moon className="h-4 w-4 mr-2" />}
-            {theme === "dark" ? "Light Mode" : "Dark Mode"}
+            {theme === "dark" ? "Light" : "Dark"}
           </Button>
-          <Button 
-            variant="ghost" 
+          <Button
+            variant="ghost"
             size="icon"
-            className="text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-all duration-300"
+            className="text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all duration-300"
             aria-label="Notifications"
           >
             <Bell className="h-5 w-5" />
           </Button>
-          <Button 
-            variant="ghost" 
+          <Button
+            variant="ghost"
             size="icon"
-            className="text-muted-foreground hover:text-foreground hover:bg-primary/10 transition-all duration-300"
+            className="text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all duration-300"
             aria-label="Settings"
           >
             <Settings className="h-5 w-5" />
           </Button>
-          <div className="flex items-center gap-2">
-            <span className="text-sm text-gray-600">John</span>
-            <img 
-              src="/placeholder-user.jpg" 
-              alt="User" 
-              className="h-8 w-8 rounded-full border border-gray-200" 
-            />
+          <div className="flex items-center gap-3 pl-3 border-l border-slate-200">
+            <span className="text-sm font-medium text-slate-700">John</span>
+            <div className="h-9 w-9 rounded-full bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center">
+              <span className="text-white font-semibold text-sm">J</span>
+            </div>
           </div>
         </div>
       </div>

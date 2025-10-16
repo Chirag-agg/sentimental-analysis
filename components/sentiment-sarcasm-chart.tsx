@@ -44,7 +44,7 @@ export default function SentimentSarcasmChart({ data }: SentimentSarcasmChartPro
   }, [data])
 
   return (
-    <Card className="border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
+    <Card className="border-slate-200 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
       <CardHeader>
         <CardTitle className="text-xl">Sentiment & Sarcasm Insights</CardTitle>
         <CardDescription>Analysis of detected patterns</CardDescription>

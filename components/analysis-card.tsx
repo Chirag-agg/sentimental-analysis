@@ -39,7 +39,7 @@ export default function AnalysisCard({ onResults }: { onResults: (results: Analy
   }
 
   return (
-    <Card className="border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors animate-fade-in">
+    <Card className="border-slate-200 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors animate-fade-in">
       <CardHeader>
         <CardTitle className="text-xl">Sentiment & Sarcasm Analysis</CardTitle>
         <CardDescription>Real-time multi-layer sentiment detection</CardDescription>
@@ -51,7 +51,7 @@ export default function AnalysisCard({ onResults }: { onResults: (results: Analy
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Enter text to analyze sentiment and detect sarcasm..."
-            className="w-full h-32 px-4 py-3 rounded-lg bg-input border border-border text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300 resize-none pulse-glow-on-focus animate-fade-in"
+            className="w-full h-32 px-4 py-3 rounded-lg bg-input border border-slate-200 text-foreground placeholder-muted-foreground focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300 resize-none pulse-glow-on-focus animate-fade-in"
             style={{
               boxShadow: input ? "0 0 20px rgba(0, 217, 255, 0.3)" : "none",
             }}
@@ -74,7 +74,7 @@ export default function AnalysisCard({ onResults }: { onResults: (results: Analy
 
         {/* Results Area */}
         {showResults && results && (
-          <div className="space-y-4 pt-6 border-t border-border animate-fade-in">
+          <div className="space-y-4 pt-6 border-t border-slate-200 animate-fade-in">
             {/* Layer 1: Literal Sentiment */}
             <div className="slide-up space-y-2 animate-slide-up">
               <div className="text-sm text-muted-foreground font-medium">Layer 1: Literal Sentiment</div>

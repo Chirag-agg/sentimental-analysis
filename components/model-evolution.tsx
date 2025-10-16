@@ -17,7 +17,7 @@ export default function ModelEvolution() {
   const maxSarcasm = 1
 
   return (
-    <Card className="border-border bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
+    <Card className="border-slate-200 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-colors">
       <CardHeader>
         <CardTitle className="text-lg">Model Evolution</CardTitle>
         <CardDescription>Performance over versions</CardDescription>
@@ -77,7 +77,7 @@ export default function ModelEvolution() {
               >
                 <div className="relative">
                   {hoveredVersion === i && (
-                    <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-card border border-border rounded px-2 py-1 text-xs whitespace-nowrap slide-up">
+                    <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 bg-card border border-slate-200 rounded px-2 py-1 text-xs whitespace-nowrap slide-up">
                       <div className="text-primary">Sentiment: {d.sentiment}%</div>
                       <div className="text-secondary">Sarcasm: {d.sarcasm}</div>
                     </div>
